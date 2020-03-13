@@ -1,18 +1,30 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home py-4">
+    <h1 class="h2 text-custom-primary font-weight-bold">Pilih Lokasi</h1>
+    <div class="weather-state-container mt-5">
+      <location-finder v-if="!location"></location-finder>
+    </div>
+    <img src="" alt="">
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+
+import LocationFinder from '@/components/LocationFinder.vue';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    LocationFinder,
+  },
+  data() {
+    return {
+      location: null,
+    };
   },
 };
 </script>
+
+<style scoped>
+
+</style>
