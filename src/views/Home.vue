@@ -4,12 +4,11 @@
     <div class="weather-state-container mt-5">
       <location-finder v-if="!location"></location-finder>
     </div>
-    <img src="" alt="">
+    <img src alt />
   </div>
 </template>
 
 <script>
-
 import LocationFinder from '@/components/LocationFinder.vue';
 
 export default {
@@ -25,6 +24,4 @@ export default {
 };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
